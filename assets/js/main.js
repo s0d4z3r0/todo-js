@@ -65,7 +65,12 @@ const addSavedTask = () => {
         createTask(task)
     }
 }
-addSavedTask()
+
+try {
+  addSavedTask()
+} catch (error) {
+  console.log(error)
+}
 
 const handleSubmit = (e) => {
   e.preventDefault();
